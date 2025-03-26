@@ -48,7 +48,7 @@ git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall2 package/luci-
 git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
 #git clone --depth=1 https://github.com/morytyann/OpenWrt-mihomo.git;main  # gg修改
 #git clone --depth=1 https://github.com/morytyann/OpenWrt-mihomo/tree/main/mihomo package/mihomo   #GG增加
-git clone --depth=1 https://github.com/morytyann/OpenWrt-mihomo package/luci-app-mihomo # GG增加
+#git clone --depth=1 https://github.com/morytyann/OpenWrt-mihomo package/luci-app-mihomo # GG增加
 # Themes
 git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
@@ -60,18 +60,18 @@ git_sparse_clone main https://github.com/haiibo/packages luci-theme-atmaterial l
 cp -f $GITHUB_WORKSPACE/images/bg1.jpg package/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 
 # 晶晨宝盒
-git_sparse_clone main https://github.com/ophub/luci-app-amlogic luci-app-amlogic
-sed -i "s|firmware_repo.*|firmware_repo 'https://github.com/haiibo/OpenWrt'|g" package/luci-app-amlogic/root/etc/config/amlogic
+#git_sparse_clone main https://github.com/ophub/luci-app-amlogic luci-app-amlogic # GG取消
+#sed -i "s|firmware_repo.*|firmware_repo 'https://github.com/haiibo/OpenWrt'|g" package/luci-app-amlogic/root/etc/config/amlogic #GG 取消
 # sed -i "s|kernel_path.*|kernel_path 'https://github.com/ophub/kernel'|g" package/luci-app-amlogic/root/etc/config/amlogic
-sed -i "s|ARMv8|ARMv8_PLUS|g" package/luci-app-amlogic/root/etc/config/amlogic
+#sed -i "s|ARMv8|ARMv8_PLUS|g" package/luci-app-amlogic/root/etc/config/amlogic # GG取消
 
 # SmartDNS
 git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
 git clone --depth=1 https://github.com/pymumu/openwrt-smartdns package/smartdns
 
 # msd_lite
-git clone --depth=1 https://github.com/ximiTech/luci-app-msd_lite package/luci-app-msd_lite
-git clone --depth=1 https://github.com/ximiTech/msd_lite package/msd_lite
+#git clone --depth=1 https://github.com/ximiTech/luci-app-msd_lite package/luci-app-msd_lite #GG取消
+#git clone --depth=1 https://github.com/ximiTech/msd_lite package/msd_lite # GG 取消
 
 # MosDNS
 git clone --depth=1 https://github.com/sbwml/luci-app-mosdns package/luci-app-mosdns
@@ -109,7 +109,7 @@ sed -i "s/${orig_version}/R${date_version} by zyong/g" package/lean/default-sett
 cp -f $GITHUB_WORKSPACE/scripts/011-fix-mbo-modules-build.patch package/network/services/hostapd/patches/011-fix-mbo-modules-build.patch
 
 # 修复 armv8 设备 xfsprogs 报错
-sed -i 's/TARGET_CFLAGS.*/TARGET_CFLAGS += -DHAVE_MAP_SYNC -D_LARGEFILE64_SOURCE/g' feeds/packages/utils/xfsprogs/Makefile
+#sed -i 's/TARGET_CFLAGS.*/TARGET_CFLAGS += -DHAVE_MAP_SYNC -D_LARGEFILE64_SOURCE/g' feeds/packages/utils/xfsprogs/Makefile # GG取消
 
 # 修改 Makefile
 find package/*/ -maxdepth 2 -path "*/Makefile" | xargs -i sed -i 's/..\/..\/luci.mk/$(TOPDIR)\/feeds\/luci\/luci.mk/g' {}
