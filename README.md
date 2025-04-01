@@ -1,5 +1,5 @@
 <div align="center">
-<img width="768" src="https://cdn.jsdelivr.net/gh/haiibo/OpenWrt/images/openwrt.png"/>
+<img width="768" src="https://cdn.jsdelivr.net/gh/goodmen001/newopop/images/openwrt.png"/>
 <h1>OpenWrt — 多设备固件云编译</h1>
 
 <img src="https://img.shields.io/github/downloads/haiibo/OpenWrt/total.svg?style=for-the-badge&color=32C955"/>
@@ -14,11 +14,9 @@
 ## 项目说明 [![](https://img.shields.io/badge/-项目基本介绍-FFFFFF.svg)](#项目说明-)
 - 固件构成：[![Lean](https://img.shields.io/badge/Lede-Lean-ff69b4.svg?style=flat&logo=appveyor)](https://github.com/coolsnowwolf/lede) [![P3TERX](https://img.shields.io/badge/OpenWrt-P3TERX-blueviolet.svg?style=flat&logo=appveyor)](https://github.com/P3TERX/Actions-OpenWrt) [![Flippy](https://img.shields.io/badge/Package-Flippy-orange.svg?style=flat&logo=appveyor)](https://github.com/unifreq/openwrt_packit) [![Haiibo](https://img.shields.io/badge/Build-Haiibo-32C955.svg?style=flat&logo=appveyor)](https://github.com/haiibo/OpenWrt)
 - 项目使用 Github Actions 拉取 [Lean](https://github.com/coolsnowwolf/lede) 的 Openwrt 源码仓库进行云编译
-- 固件默认管理地址：`192.168.1.1` 默认用户：`root` 默认密码：`password`
-- 提供适配于 ARMv8 电视盒子、Rockchip 平台、树莓派以及 X86 平台设备的 OpenWrt 固件
-- ARMv8 盒子固件分为 [Mini版](https://github.com/haiibo/OpenWrt/releases/tag/ARMv8_MINI) 和 [Plus版](https://github.com/haiibo/OpenWrt/releases/tag/ARMv8_PLUS)，Mini 精简版以科学上网为主，Plus 多功能版插件多适合折腾
-- ARMv8 系列固件包含 [F大](https://github.com/unifreq/openwrt_packit) 发布的所有已适配的盒子固件，并提供 Docker 镜像固件[➦使用方法](https://hub.docker.com/r/summary/openwrt-aarch64)
-- 固件集成的所有 ipk 插件全部打包在 Packages 文件中，可以在 [Releases](https://github.com/haiibo/OpenWrt/releases) 内进行下载
+- 固件默认管理地址：`XXXX` 默认用户：`XXXXX` 默认密码：`XXXXX`
+- 提供适配于X86 平台设备的 OpenWrt 固件，并提供 Docker 镜像固件[➦使用方法](https://hub.docker.com/r/summary/openwrt-aarch64)
+- 固件集成的所有 ipk 插件全部打包在 Packages 文件中，可以在 [Releases](https://github.com/goodmen001/newopop/releases) 内进行下载
 - 项目编译的固件插件为最新版本，最新版插件可能有 BUG，如果之前使用稳定则无需追新
 - 第一次使用请采用全新安装，避免出现升级失败以及其他一些可能的 BUG
 
@@ -38,7 +36,7 @@
 点击下表中 [![](https://img.shields.io/badge/下载-链接-blueviolet.svg?style=flat&logo=hack-the-box)](https://github.com/goodmen001/newopop/releases) 即可跳转到该设备固件下载页面
 | 平台+设备名称 | 固件编译状态 | 配置文件 | 固件下载 |
 | :-------------: | :-------------: | :-------------: | :-------------: |
-| [![](https://img.shields.io/badge/OpenWrt-X86_64位-32C955.svg?logo=openwrt)](https://github.com/goodmen001/newopop/blob/main/.github/workflows/X86_64-OpenWrt.yml) | [![](https://github.com/goodmen001/newopop/actions/workflows/X86_64-OpenWrt.yml/badge.svg)](https://github.com/goodmen001/newopop/actions/workflows/X86_64-OpenWrt.yml) | [![](https://img.shields.io/badge/编译-配置-orange.svg?logo=apache-spark)](https://goodmen001/newopop/blob/main/configs/x86_64.config) | [![](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://github.com/goodmen001/newopopaiibo/OpenWrt/releases/tag/X86_64) |
+| [![](https://img.shields.io/badge/OpenWrt-X86_64位-32C955.svg?logo=openwrt)](https://github.com/goodmen001/newopop/blob/main/.github/workflows/X86_64-OpenWrt.yml) | [![](https://github.com/goodmen001/newopop/actions/workflows/X86_64-OpenWrt.yml/badge.svg)](https://github.com/goodmen001/newopop/actions/workflows/X86_64-OpenWrt.yml) | [![](https://img.shields.io/badge/编译-配置-orange.svg?logo=apache-spark)](https://goodmen001/newopop/blob/main/configs/x86_64.config) | [![](https://img.shields.io/badge/下载-链接-blueviolet.svg?logo=hack-the-box)](https://github.com/goodmen001/newopop/OpenWrt/releases/tag/X86_64) |
 
 ## 近期更新 [![](https://img.shields.io/badge/-近期固件更新-FFFFFF.svg)](#近期更新-)
 🤣努力修复中……
