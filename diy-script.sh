@@ -10,9 +10,9 @@ sed -i 's/192.168.1.1/192.168.99.1/g' package/base-files/files/bin/config_genera
 # sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
 
 # 移除要替换的包
-rm -rf feeds/packages/net/mosdns
-rm -rf feeds/packages/net/msd_lite
-rm -rf feeds/packages/net/smartdns
+#rm -rf feeds/packages/net/mosdns#GG
+#rm -rf feeds/packages/net/msd_lite#G
+#rm -rf feeds/packages/net/smartdns#G
 #rm -rf feeds/luci/themes/luci-theme-argon# GG
 #rm -rf feeds/luci/themes/luci-theme-netgear#GG
 rm -rf feeds/luci/applications/luci-app-mosdns
